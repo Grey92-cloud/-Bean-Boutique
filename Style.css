@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,sans-serif;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-header {
+    background-color:rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-links a.nav-btn {
+    background-color: #2b1b17;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 0 8px;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a.nav-btn.active {
+    background-color: #653926;
+}
+
+.nav-links a.nav-btn:hover {
+    background-color: #c4a484;
+    color: #111111;
+}
+
+.Grey {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+}
+
+.home-bg {
+    background-image: url('Cappuccino.jpg');
+}
+
+.brewing-bg {
+    background-image: url('brewing.jpg');
+}
+
+.shopping-bg {
+    background-image: url('shopping cart.jpg');
+}
+
+.special-bg {
+    background-image: url('special offer.jpg');
+}
+
+.events-bg {
+    background-image: url('event.jpg');
+}
+
+.selection-bg {
+    background-image: url('selection.jpg');
+}
+
+.Grey-content {
+    max-width: 600px;
+}
+
+.subtitle {
+    display: block;
+    font-size: 14px;
+    color: #020202;
+    margin-bottom: 10px
+}
+
+.Grey-content h1 {
+    font-size: 48px;
+    margin-bottom: 14px;
+    line-height: 1.2;
+}
+
+.Grey-content p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #cccccc;
+}
+
+.picture-content {
+    padding: 50px 8%;
+    text-align: center;
+    background-color: black;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.image-grid img {
+    width: 220px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.image-grid p {
+    color: white;
+    margin-top: 16px;
+    font-size: 10px;
+}
