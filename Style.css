@@ -120,10 +120,69 @@ a {
     width: 220px;
     height: 180px;
     object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: translateY(-5px);
 }
 
 .image-grid p {
     color: white;
     margin-top: 16px;
     font-size: 10px;
+}
+
+.registration-section {
+    padding: 60px 8%;
+    text-align: center;
+    color: white;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #dfdbd4;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    background-color: #2b1b17;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #c4a484;
+    color: #111111;
 }
