@@ -26,5 +26,40 @@
             <h1>Dont Stop There! Check out our upcoming events and workshops! Where we showcase various blends of coffee makes from different regions!</h1>
         </div>
     </main>
+
+    <form class="registration-section">
+        <h2>Thinking of registering? RESERVE YOUR SPOT NOW!</h2>
+        <p>Sign up for our upcoming coffee tasting sessions and brewing classes!</p>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div class="captcha">
+                <div class="captcha-box">
+                    <input type="checkbox" id="captcha" name="captcha" required>
+                    <label for="captcha">I am not a robot</label>
+                </div>
+                <div class="captcha-image">
+                    <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA Logo" width="24" height="24">
+                    <span>reCAPTCHA</span>
+                </div>
+            </div>
+            <button type="submit">Submit Registration</button>
+        </form>
+    </form>
+
+    <map class="map-section">
+        <h2>Find Us Here!</h2>
+        <p>Visit our boutique and experience the finest coffee makes in town!</p>
+        <iframe
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086123456789!2d-122.419415484681!3d37.774929779759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c12345678%3A0xabcdef1234567890!2sBean%20Boutique!5e0!3m2!1sen!2sus!4v1612345678901" 
+           width="600" 
+           height="450" 
+           style="border:0;" 
+           allowfullscreen="" 
+           loading="lazy">
+        </iframe>
+    </map>
 </body>
 </html>
