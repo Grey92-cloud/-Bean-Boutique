@@ -24,7 +24,61 @@
     <main class="Grey shopping-bg">
         <div class="Grey-content">
             <h1>In this section, feel free to choose a variety of our goods provided in our site!</h1>
+            <div class="cart">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="cart-info">
+                                    <img src="coffee.jpg" alt="coffee" class="cart-img">
+                                    <span id="display-name">No items added</span>
+                                </div>
+                            </td>
+                            <td id="display-price">K0</td>
+                            <td>1</td>
+                            <td id="display-total">K0</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="cart-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="display-subtotal">K0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Delivery:</span>
+                        <span>K1500</span>
+                    </div>
+                    <hr class="summary-divider">
+                    <div class="total-row">
+                        <span>Total Cost:</span>
+                        <span id="display-final-total">K1500</span>
+                    </div>
+
+                    <button class="checkout-btn" onclick="alert('Transactions are done!!! NICEEEE!!!'); localStorage.clear(); window.location.href='index.html';">
+                        Purchase
+                    </button>
+                </div>
+            </div>
         </div>
     </main>
+    <footer>
+        <div class="social-icons">
+            <p>2026 Bean Boutique. All rights reserved. G.K.Ngwira. Follow for more info!</p>
+            <a href="https://www.facebook.com/yourpage" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://twitter.com/yourhandle" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+        </div>
+    </footer> 
 </body>
 </html>

@@ -27,12 +27,52 @@
         </div>
     </main>
 
-    <social class="social-widget">
-        <p>Stay updated with our latest coffee blends, brewing tips, and exclusive offers by following us on social media.</p>
+    <section class="product-section">
+        <h2>Our Special Brewing Equipment</h2>
+
+        <div class="product-grid">
+
+            <div class="product-box">
+              <img src="equipment.jpg" alt="Equipment 1">
+              <h3>Espresso Machine</h3>
+              <p class="description">A high-quality espresso machine for the perfect shot every time</p>
+              <p class="price">K50,000</p>
+              <button class="add-to-cart" onclick="alert('Espresso Machine has been added to your cart!'); window.location.href='shopping-cart.html'">Add to Cart</button>
+            </div>
+
+            <div class="product-box">
+              <img src="equipment2.jpg" alt="Equipment 2">
+              <h3>French Press</h3>
+              <p class="description">A classic French press for brewing rich and full-bodied coffee</p>
+              <p class="price">K25,000</p>
+              <button class="add-to-cart" onclick="localStorage.setItem('itemName', 'French Press'); localStorage.setItem('itemPrice', 'K25,000'); alert('French Press has been added to your cart!'); window.location.href='shopping-cart.html'">Add to Cart</button>
+            </div>
+
+            <div class="product-box">
+              <img src="equipment3.jpg" alt="Equipment 3">
+              <h3>Drip Coffee Maker</h3>
+              <p class="description">A reliable drip coffee maker for consistent brewing</p>
+              <p class="price">K30,000</p>
+             <button class="add-to-cart" onclick="localStorage.setItem('itemName', 'Drip Coffee Maker'); localStorage.setItem('itemPrice', 'K30,000'); alert('Drip Coffee Maker has been added to your cart!'); window.location.href='shopping-cart.html'">Add to Cart</button>
+           </div>
+
+           <div class="product-box">
+              <img src="equipment4.jpg" alt="Equipment 4">
+              <h3>Percolator</h3>
+              <p class="description">A traditional percolator for a rich and robust cup of coffee</p>
+              <p class="price">K20,000</p>
+              <button class="add-to-cart" onclick="alert('Percolator has been added to your cart!'); window.location.href='shopping-cart.html'">Add to Cart</button>
+          </div>
+        </div>
+    </section>
+
+    <footer>
         <div class="social-icons">
+            <p>2026 Bean Boutique. All rights reserved. G.K.Ngwira. Follow for more info!</p>
             <a href="https://www.facebook.com/yourpage" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
             <a href="https://www.instagram.com/yourprofile" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
             <a href="https://twitter.com/yourhandle" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
         </div>
+    </footer> 
 </body>
 </html>

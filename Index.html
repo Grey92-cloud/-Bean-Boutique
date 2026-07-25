@@ -28,25 +28,45 @@
         </div>
     </main>
 
-    <section class="picture-content">
-        <div class="image-grid">
-            <div>
-                <img src="selection.jpg" alt="Coffee 1">
-                <p>COFFEE SELECTION</p>
-            </div>
-            <div>
-                <img src="brewing.jpg" alt="Coffee 2">
-                <p>BREWING EQUIPMENT</p>
-            </div>
-            <div>
-                <img src="event.jpg" alt="Coffee 3">
-                <p>EVENTS AND WORKSHOPS</p>
-            </div>
-            <div>
-                <img src="shopping cart.jpg" alt="Coffee 4">
-                <p>SHOPPING CART</p>
-            </div>
+    <section class="slideshow">
+        <h2>Explore Our Coffee Selection</h2>
+        <div class="slideshow">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <img id="current-slide" src="selection.jpg" alt="Coffee Selection">
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <p id="slide-caption">Coffee Selection</p>
         </div>
-    </section>
+    </section> 
+    <footer>
+        <div class="social-icons">
+            <p>2026 Bean Boutique. All rights reserved. G.K.Ngwira. Follow for more info!</p>
+            <a href="https://www.facebook.com/yourpage" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://twitter.com/yourhandle" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+        </div>
+    </footer>    
+
+<script>
+    const myImages = ["selection.jpg", "brewing.jpg", "event.jpg", "shopping cart.jpg"];
+
+    const myCaptions = ["Coffee Selection", "Brewing Equipment", "Events and Workshops", "Shopping Cart"];
+    let currentIndex = 0;
+
+
+    function changeSlide(direction) {
+        currentIndex += direction;
+
+        if (currentIndex >= myImages.length) {
+            currentIndex = 0;
+        }
+
+        if (currentIndex < 0) {
+            currentIndex = myImages.length - 1;
+        }
+
+        document.getElementById("current-slide").src = myImages[currentIndex];
+        document.getElementById("slide-caption").textContent = myCaptions[currentIndex];
+    }
+</script>   
 </body>
 </html>
